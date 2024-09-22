@@ -40,3 +40,8 @@ Route::resource('quesitos-avaliativos', QuesitoAvaliativoController::class);
 
 Route::resource('avaliacoes', AvaliacaoController::class);
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

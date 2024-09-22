@@ -1,66 +1,153 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Fecioeste
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> •  
+ <a href="#user-content--licença">Licença</a>
 </p>
 
-## About Laravel
+## 💻 Sobre o projeto
+O Instituto Federal de Mato Grosso do Sul (IFMS) promove as Feiras de Ciência e Tecnologia nos dez municípios onde a instituição tem campus. 
+Neste evento podem apresentar trabalhos estudantes dos ensinos fundamental (6º ao 9º ano), médio e técnico integrado das escolas das redes pública e privada dos municípios da área de abrangência dos campi do IFMS, assim como ex-alunos do Instituto Federal que concluíram os cursos após novembro do ano passado.
+O objetivo desse projeto é facilitar a avaliação de trabalhos submetidos para a Feira de Ciência e Tecnologia da Região Sudoeste em Jardim (Fecioeste).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ⚙️ Funcionalidades
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [ ] Os usuários com perfil Administrador tem acesso ao menu administrativo, onde podem:
+    - [X] gerenciar os usuários, perfis e permissões
+    - [X] gerenciar as páginas
+    - [X] gerenciar as postagens
+    - [X] gerenciar as categorias
 
-## Learning Laravel
+- [ ] Os usuários tem acesso a parte pública da aplicação web, onde podem:
+    - [X] Registrar-se como usuário comum
+    - [ ] Logar-se para ter acesso ao menu administrativo
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
+## 🚀 Como executar o projeto
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Pré-requisitos
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com), [PHP ^7.3|^8.0](https://www.php.net/downloads), [Composer](https://getcomposer.org/download/), [Laravel](https://laravel.com/docs/10.x/installation).
 
-## Laravel Sponsors
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 🎲 Rodando o Projeto 
 
-### Premium Partners
+#### Instalando as dependências
+```bash
+# Clone este repositório
+$ git clone https://github.com/andreifms/fecioeste.git
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+# Acesse a pasta do projeto no terminal/cmd
+$ cd fecioeste
 
-## Contributing
+# Instale as dependências composer
+$ composer install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+```
+#### Configurando o projeto
+1. Faça uma cópia do arquivo `.env.example` e renomeie para `.env`:
+2. Crie um banco de dados
+> Sugestão MariaDB ou MySQL: definição de collation: **utf8mb4_general_ci**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. Configure a conexão com os dados do banco de dados no arquivo `.env`:
+```php  
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=NOMEDOBANCO
+    DB_USERNAME=USUARIO
+    DB_PASSWORD=SENHA
+```
+#### Rodando o servidor
+```bash    
+# Criação de nova chave de criptografia da aplicação:
+php artisan key:generate
 
-## Security Vulnerabilities
+#Criação do link simbólico:
+php artisan storage:link
+    
+# Criação das tabelas e inserção dos dados no banco de dados:
+php artisan migrate:fresh --force --seed
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Adicionar assets do voyager
+php artisan vendor:publish --tag voyager_avatar
+php artisan vendor:publish --tag dummy_content
 
-## License
+# Execute a aplicação em modo de desenvolvimento
+php artisan serve
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# O servidor iniciará na porta:8000 - acesse <http://localhost:8000>
+```
+
+### 🎲 Acesso ao Projeto (servidor)
+Usuários criados:
+- **Admin** ➠ login: ```admin@admin.com``` senha: ```password```
+
+**Criar usuário pelo terminal usando tinker:**
+Executar o tinker
+```bash
+php artisan tinker
+```
+No tinker: 
+```bash
+$user = new \App\Models\User;
+$user->email = 'admin@admin.com';
+$user->password = Hash::make('senha'); # altere 'senha' para uma senha forte
+$user->name = 'Nome do Administrator';
+$user->save();
+exit()
+```
+---
+
+### Criar Migrations e Seeder a partir do banco
+
+***gerar migrations a partir da tabela criada no banco***
+```bash   
+php artisan migrate:generate minha_tabela
+```
+
+***gerar seeders a partir dos dados inseridos no banco***
+```bash   
+php artisan iseed data_types,data_rows,menus,menu_items,roles,permissions,permission_role,settings --classnameprefix=Iseed --force
+```
+
+***Criação das tabelas e inserção dos dados no banco de dados:***
+```bash   
+php artisan migrate:fresh --force --seed
+```
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Laravel 10](https://laravel.com/docs)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/search?o=r&m=free)
+
+As seguintes dependências foram incluidas no projeto:
+- [Voyager](https://github.com/thedevdojo/voyager)
+- [Laravel Migrations Generator](https://github.com/kitloong/laravel-migrations-generator)
+- [Iseed](https://github.com/orangehill/iseed)
+- [Laravel Fortify](https://github.com/laravel/fortify)
+- [Laravel Migrations Generator](https://github.com/kitloong/laravel-migrations-generator)
+- [Inverse seed generator (iSeed)](https://github.com/orangehill/iseed)
+- [LaravelLegends pt-br-validator](https://github.com/LaravelLegends/pt-br-validator)
+---
+
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+
+## 📝 Licença
+
+Este projeto é um software de código aberto licenciado sob a licença [gnu general public license version 3.0 (gplv3)](./LICENSE).
