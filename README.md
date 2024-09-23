@@ -17,15 +17,26 @@ O objetivo desse projeto é facilitar a avaliação de trabalhos submetidos para
 
 ## ⚙️ Funcionalidades
 
-- [ ] Os usuários com perfil Administrador tem acesso ao menu administrativo, onde podem:
+- [ ] Os usuários com perfil **Administrador** tem acesso ao menu administrativo, onde podem:    
     - [X] gerenciar os usuários, perfis e permissões
     - [X] gerenciar as páginas
     - [X] gerenciar as postagens
     - [X] gerenciar as categorias
 
-- [ ] Os usuários tem acesso a parte pública da aplicação web, onde podem:
+- [ ] Os usuários com perfil **Membro Comissão Organizadora** tem acesso ao menu administrativo, onde podem:    
+    - [X] gerenciar os usuários com os perfis: Membro Comissão Organizadora, Avaliador
+    - [X] gerenciar as áreas
+    - [X] gerenciar os critérios avaliativos
+    - [ ] gerenciar os projetos
+
+- [ ] Os usuários com perfil **Avaliador** tem acesso ao menu administrativo, onde podem:    
+    - [ ] adicionar área de interesse para avaliação
+    - [ ] avaliar projeto em que ele foi definido como avaliador
+
+
+- [ ] Os usuários não autenticados tem acesso a parte pública da aplicação web, onde podem:
     - [X] Registrar-se como usuário comum
-    - [ ] Logar-se para ter acesso ao menu administrativo
+    - [X] Logar-se para ter acesso ao menu administrativo
 
 ---
 ## 🚀 Como executar o projeto
