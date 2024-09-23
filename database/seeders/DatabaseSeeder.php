@@ -18,5 +18,17 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call(IseedDataTypesTableSeeder::class);
+        $this->call(IseedDataRowsTableSeeder::class);
+        $this->call(IseedMenusTableSeeder::class);
+        $this->call(IseedMenuItemsTableSeeder::class);
+        $this->call(IseedRolesTableSeeder::class);
+        $this->call(IseedPermissionsTableSeeder::class);
+        $this->call(IseedPermissionRoleTableSeeder::class);
+        $this->call(IseedSettingsTableSeeder::class);
+        $this->call([
+	        // VoyagerDatabaseSeeder::class,
+	        VoyagerDummyDatabaseSeeder::class,
+		    ]);
     }
 }

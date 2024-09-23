@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class QuesitoAvaliativo extends Model
 {
+    protected $table = 'quesitos_avaliativos';
     protected $fillable = ['nome'];
 
     public function avaliacoes()
