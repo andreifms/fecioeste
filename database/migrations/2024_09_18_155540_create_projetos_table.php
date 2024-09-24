@@ -14,12 +14,14 @@ return new class extends Migration
         Schema::create('projetos', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->string('nivel');
+            $table->string('nivel'); //ENUM (Fundamental, Médio, PROEJA, Superior)
             $table->foreignId('area_id')->constrained()->onDelete('cascade');
-            $table->boolean('convidado');
+            $table->boolean('convidado'); //Projeto não submetido ao evento
             $table->foreignId('escola_id')->constrained()->onDelete('cascade');
             $table->foreignId('orientador_id')->constrained('orientadores')->onDelete('cascade');
             $table->foreignId('coorientador_id')->nullable()->constrained('orientadores')->onDelete('cascade');
+            $table->foreignId('edital_id')->nullable()->constrained('editais')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

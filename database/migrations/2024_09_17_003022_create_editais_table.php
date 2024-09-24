@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('quesitos_avaliativos', function (Blueprint $table) {
-            $table->id();
-            $table->string('nome');
-            $table->string('descricao');
-            $table->float('nota');
+        Schema::create('editais', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nome', 50);
+            $table->date('data_inicio_avaliacao');
+            $table->date('data_fim_avaliacao');
+            $table->tinyInteger('status')->nullable()->default(1);
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('quesito_avaliativos');
+        Schema::dropIfExists('editais');
     }
 };

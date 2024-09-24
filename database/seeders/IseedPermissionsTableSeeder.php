@@ -499,6 +499,86 @@ class IseedPermissionsTableSeeder extends Seeder
                 'created_at' => '2024-09-22 05:25:04',
                 'updated_at' => '2024-09-22 05:25:04',
             ),
+            60 => 
+            array (
+                'id' => 61,
+                'key' => 'browse_avaliadores',
+                'table_name' => 'avaliadores',
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-23 23:45:58',
+            ),
+            61 => 
+            array (
+                'id' => 62,
+                'key' => 'read_avaliadores',
+                'table_name' => 'avaliadores',
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-23 23:45:58',
+            ),
+            62 => 
+            array (
+                'id' => 63,
+                'key' => 'edit_avaliadores',
+                'table_name' => 'avaliadores',
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-23 23:45:58',
+            ),
+            63 => 
+            array (
+                'id' => 64,
+                'key' => 'add_avaliadores',
+                'table_name' => 'avaliadores',
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-23 23:45:58',
+            ),
+            64 => 
+            array (
+                'id' => 65,
+                'key' => 'delete_avaliadores',
+                'table_name' => 'avaliadores',
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-23 23:45:58',
+            ),
+            65 => 
+            array (
+                'id' => 66,
+                'key' => 'browse_editais',
+                'table_name' => 'editais',
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:26:29',
+            ),
+            66 => 
+            array (
+                'id' => 67,
+                'key' => 'read_editais',
+                'table_name' => 'editais',
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:26:29',
+            ),
+            67 => 
+            array (
+                'id' => 68,
+                'key' => 'edit_editais',
+                'table_name' => 'editais',
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:26:29',
+            ),
+            68 => 
+            array (
+                'id' => 69,
+                'key' => 'add_editais',
+                'table_name' => 'editais',
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:26:29',
+            ),
+            69 => 
+            array (
+                'id' => 70,
+                'key' => 'delete_editais',
+                'table_name' => 'editais',
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:26:29',
+            ),
         ));
         
         

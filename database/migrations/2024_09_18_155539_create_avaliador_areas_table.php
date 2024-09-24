@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('avaliadores_areas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('avaliador_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('avaliador_id')->constrained('avaliadores')->onDelete('cascade');
             $table->foreignId('area_id')->constrained('areas')->onDelete('cascade');
             $table->timestamps();
         });

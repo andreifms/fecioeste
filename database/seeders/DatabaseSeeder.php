@@ -30,5 +30,6 @@ class DatabaseSeeder extends Seeder
 	        // VoyagerDatabaseSeeder::class,
 	        VoyagerDummyDatabaseSeeder::class,
 		    ]);
+        $this->call(IseedAreasTableSeeder::class);
     }
 }

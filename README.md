@@ -28,6 +28,10 @@ O objetivo desse projeto é facilitar a avaliação de trabalhos submetidos para
     - [X] gerenciar as áreas
     - [X] gerenciar os critérios avaliativos
     - [ ] gerenciar os projetos
+    - [ ] cadastrar avaliadores baseado na área para projeto
+    - [ ] sortear N avaliadores para o projeto selecionado (exceto o autor)
+    - [ ] importar por planilha os projetos
+    - [ ] exportar notas finais por trabalho (tudo)
 
 - [ ] Os usuários com perfil **Avaliador** tem acesso ao menu administrativo, onde podem:    
     - [ ] adicionar área de interesse para avaliação
@@ -38,7 +42,7 @@ O objetivo desse projeto é facilitar a avaliação de trabalhos submetidos para
     - [X] Registrar-se como usuário comum
     - [X] Logar-se para ter acesso ao menu administrativo
 
----
+
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
@@ -128,6 +132,9 @@ php artisan migrate:generate minha_tabela
 ```bash   
 php artisan iseed data_types,data_rows,menus,menu_items,roles,permissions,permission_role,settings --classnameprefix=Iseed --force
 ```
+```bash  
+php artisan iseed areas --classnameprefix=Iseed --force
+```
 
 ***Criação das tabelas e inserção dos dados no banco de dados:***
 ```bash   
@@ -162,3 +169,7 @@ As seguintes dependências foram incluidas no projeto:
 ## 📝 Licença
 
 Este projeto é um software de código aberto licenciado sob a licença [gnu general public license version 3.0 (gplv3)](./LICENSE).
+
+## Pegar dados da API
+
+[//]: # (/administrativo/alunos/panorama/datatable_lista_estudante_por_campus?&sSearch=isabele)

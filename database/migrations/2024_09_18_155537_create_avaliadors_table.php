@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('avaliadores', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('tipo_avaliador');
+            $table->string('tipo_avaliador'); //externo ou interno (ENUM)
             $table->timestamps();
         });
     }

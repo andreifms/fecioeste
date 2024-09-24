@@ -291,6 +291,38 @@ class IseedMenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.quesitos-avaliativos.index',
                 'parameters' => NULL,
             ),
+            17 => 
+            array (
+                'id' => 18,
+                'menu_id' => 1,
+                'title' => 'Avaliadores',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'voyager-group',
+                'color' => NULL,
+                'parent_id' => NULL,
+                'order' => 19,
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-23 23:45:58',
+                'route' => 'voyager.avaliadores.index',
+                'parameters' => NULL,
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'menu_id' => 1,
+                'title' => 'Editais',
+                'url' => '',
+                'target' => '_self',
+                'icon_class' => 'voyager-file-text',
+                'color' => NULL,
+                'parent_id' => NULL,
+                'order' => 20,
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:26:29',
+                'route' => 'voyager.editais.index',
+                'parameters' => NULL,
+            ),
         ));
         
         

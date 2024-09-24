@@ -199,6 +199,42 @@ class IseedDataTypesTableSeeder extends Seeder
                 'created_at' => '2024-09-22 05:25:04',
                 'updated_at' => '2024-09-22 05:25:04',
             ),
+            10 => 
+            array (
+                'id' => 12,
+                'name' => 'avaliadores',
+                'slug' => 'avaliadores',
+                'display_name_singular' => 'Avaliador',
+                'display_name_plural' => 'Avaliadores',
+                'icon' => 'voyager-group',
+                'model_name' => 'App\\Models\\Avaliador',
+                'policy_name' => NULL,
+                'controller' => 'App\\Http\\Controllers\\VoyagerController',
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
+                'created_at' => '2024-09-23 23:45:58',
+                'updated_at' => '2024-09-24 00:45:39',
+            ),
+            11 => 
+            array (
+                'id' => 14,
+                'name' => 'editais',
+                'slug' => 'editais',
+                'display_name_singular' => 'Edital',
+                'display_name_plural' => 'Editais',
+                'icon' => 'voyager-file-text',
+                'model_name' => 'App\\Models\\Edital',
+                'policy_name' => NULL,
+                'controller' => 'App\\Http\\Controllers\\VoyagerController',
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
+                'created_at' => '2024-09-24 00:26:29',
+                'updated_at' => '2024-09-24 00:27:17',
+            ),
         ));
         
         
